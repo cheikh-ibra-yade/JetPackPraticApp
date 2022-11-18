@@ -27,7 +27,7 @@ fun ArtSpaceApp(modifier: Modifier = Modifier
     .fillMaxSize()
     .padding(16.dp)
     ){
-    //State
+    //Stated
     val album by remember{
         mutableStateOf(getGaleries())
     }
