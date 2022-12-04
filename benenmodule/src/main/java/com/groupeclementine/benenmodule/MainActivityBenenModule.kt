@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.groupeclementine.benenmodule.ui.theme.PraticAppTheme
+import com.groupeclementine.praticapp.presentation.screen.SuperheroApp
 
 class MainActivityBenenModule : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivityBenenModule : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    SuperheroApp()
                 }
             }
         }
