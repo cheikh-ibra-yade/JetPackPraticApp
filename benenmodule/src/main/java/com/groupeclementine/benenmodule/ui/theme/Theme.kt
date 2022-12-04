@@ -27,18 +27,37 @@ private val LightColorPalette = lightColors(
     */
 )
 
+
+private val HeroDarkColorPalette = darkColors(
+    background = md_theme_dark_background,
+    surface = md_theme_dark_surface,
+    onSurface = md_theme_dark_onSurface,
+    primary = md_theme_dark_primary,
+    onPrimary = md_theme_dark_onPrimary,
+    secondary = md_theme_dark_secondary
+)
+
+private val HeroLightColorPalette = darkColors(
+    background = md_theme_light_background,
+    surface = md_theme_light_surface,
+    onSurface = md_theme_light_onSurface,
+    primary = md_theme_light_primary,
+    onPrimary = md_theme_light_onPrimary,
+    secondary = md_theme_light_secondary
+)
+
 @Composable
 fun PraticAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
-        DarkColorPalette
+        HeroDarkColorPalette
     } else {
-        LightColorPalette
+        HeroLightColorPalette
     }
 
     MaterialTheme(
         colors = colors,
         typography = Typography,
-        shapes = Shapes,
+        shapes = SuperHeroShapes,
         content = content
     )
 }

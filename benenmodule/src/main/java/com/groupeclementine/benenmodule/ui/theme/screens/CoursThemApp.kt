@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.material.Card
+import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -68,7 +69,7 @@ fun TitleAndDescriptionCard(name: String) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Image(painter = painterResource(R.drawable.black_berry), contentDescription = "")
+            Icon(painter = painterResource(R.drawable.black_berry), contentDescription = "", tint = Color.Black)
             Spacer(modifier = Modifier.width(4.dp))
             Text("123")
 

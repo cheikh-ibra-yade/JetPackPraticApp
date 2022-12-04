@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BenenModule</string>
+    <string name="hero1">hero1</string>
+    <string name="description1">hero1</string>
+    <string name="hero2">hero2</string>
+    <string name="description2">hero2</string>
+    <string name="hero3">hero3</string>
+    <string name="description3">hero3</string>
+    <string name="hero4">hero4</string>
+    <string name="description4">hero4</string>
+    <string name="hero5">hero5</string>
+    <string name="description5">hero5</string>
+    <string name="hero6">hero6</string>
+    <string name="description6">hero6</string>
 </resources>
